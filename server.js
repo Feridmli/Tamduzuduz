@@ -14,7 +14,7 @@ dotenv.config();
 // ---------- POSTGRES SETUP ----------
 const connectionString =
   process.env.DATABASE_URL ||
-  "postgresql://postgres:kamos123@db.rdlbssxakkubxzbdmdhy.supabase.co:5432/postgres";
+  "postgresql://postgres:kamo123@db.rdlbssxakkubxzbdmdhy.supabase.co:5432/postgres";
 
 // Note: postgres lib expects a valid URL; if your password contains special chars, use percent-encoding or set env via Render dashboard.
 const sql = postgres(connectionString, { ssl: { rejectUnauthorized: false } });
